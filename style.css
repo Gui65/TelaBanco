@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid #00ff5f;
+    background-color: #ffff;
+    padding: 8px 50px;
+    width: 100%;
+    height: 60px;
+}
+
+.col-1 {
+    border: 1px solid #00FF5F;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+#column-1 {
+    position: fixed;
+    width: 700px;
+    height: 300px;
+    left: 380px;
+    top: 164px;
+}
+
+#column-2 {
+    position: fixed;
+    width: 700px;
+    height: 300px;
+    left: 380px;
+    top: 500px;
+}
+
+#column-3 {
+    position: fixed;
+    width: 576px;
+    height: 300px;
+    left: 1200px;
+    top: 500px;
+}
+
+.left .logo {
+    height: 40px;
+}
+
+.center .name {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.right {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    margin-top: -55px;
+    margin-right: -5px;
+    height: 60px;
+    align-items: center;
+}
+
+.right .icon box-icon {
+    width: 35px;
+    height: 50px;
+}
+
+.navigation {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: 0px;
+    margin-top: 120px;
+    background: #000000;
+    border-radius: 0px 30px;
+    border-left: 10px solid #000000;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.navigation:hover {
+    width: 300px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navigation ul li a .icon box-icon {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.navigation ul li a .titulo {
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navigation ul li.active {
+    border-left: 4px solid #00ff5f;
+    align-items: center;
+}
+
+.navigation ul .login {
+    justify-content: center;
+}
+
+.navigation ul li a .foto {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+}
+
+.navigation ul li a h2 {
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    font-weight: 100;
+}
+
+.navigation ul li a h6 {
+    position: relative;
+    top: 0px;
+    left: 95px;
+    white-space: nowrap;
+    font-weight: 100;
+    color: rgb(206, 200, 200);
+}
+
+.navigation ul li a .saldo {
+    left: 0;
+    top: 25px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Next</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/download-removebg-preview.png" alt="" class="logo">
+        </div>
+        <div class="center">
+            <h1 class="name" href="#">NEXT</h1>
+        </div>
+        <div class="barra">
+
+        </div>
+        <div class="right">
+            <span class="icon"><box-icon type='solid' name='adjust-alt'></box-icon></span>
+            <span class="icon"><box-icon name='dots-vertical'></box-icon></span>
+        </div>
+    </header>
+    <div class="navigation">
+        <ul>
+            <li class="login">
+                <a href="#">
+                    <img class="foto" src="img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="">
+                    <h2 class="name">Roberta Nunes</h2>
+                </a>
+            </li>
+            <li class="login">
+                <a href="#">
+                    <h6 class="name">237-Next Ag: 3858 C/C:473681-8</h6>
+                </a>
+            </li>
+            <li class="login">
+                <a href="#">
+                    <h6 class="saldo">R$
+                        <h2>200.000,00</h2>
+
+                    </h6>
+                    <span class="icon"><box-icon name='low-vision' color='rgb(206, 200, 200)'></box-icon></span>
+
+                </a>
+            </li>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><box-icon name='home' type='solid' color='#00ff5f' ></box-icon></span>
+                    <span class="titulo">Ínicio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon type='solid' name='file-txt' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Extrato</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='transfer' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Transferências</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='dollar' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Pagamentos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='credit-card' type='solid' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Cartões</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='pinterest-alt' type='logo' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Pix</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='bank' type='solid' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Crédito</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='line-chart' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Investimentos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><box-icon name='crown' type='solid' color='#00ff5f'></box-icon></span>
+                    <span class="titulo">Mimos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="column-1" class="col-1">
+
+    </div>
+    <div id="column-2" class="col-1">
+
+    </div>
+    <div id="column-3" class="col-1">
+
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active')
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+</body>
+
+</html>
