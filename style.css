@@ -24,176 +24,6 @@ header {
     height: 60px;
 }
 
-.col-1 {
-    border: 1px solid #00FF5F;
-    box-sizing: border-box;
-    border-radius: 30px;
-    display: inline-block;
-}
-
-#column-1 {
-    position: fixed;
-    width: 700px;
-    height: 300px;
-    left: 380px;
-    top: 164px;
-}
-
-#column-1 table {
-    margin: 0;
-    position: absolute;
-    color: #898989;
-    text-align: center;
-    font-weight: 400;
-    width: 90%;
-    height: 70%;
-    top: 60%;
-    left: 0%;
-    transform: translate(0, -50%);
-}
-
-#column-1 table th {
-    font-size: 10px;
-    font-weight: 100;
-}
-
-#column-1 table tr {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-#column-1 h1 {
-    margin: 0;
-    position: absolute;
-    color: #868686;
-    font-weight: 400;
-    top: 12%;
-    left: 5%;
-    transform: translate(0, -50%);
-}
-
-#column-1 .icon {
-    position: relative;
-    display: block;
-    right: 40%;
-    transform: translate(80%, 0%);
-    line-height: 85px;
-}
-
-#column-1 h4 {
-    margin: 0;
-    position: relative;
-    color: #00ff5f;
-    font-weight: 100;
-    height: 100px;
-    left: 70%;
-    transform: translate(0, -70%);
-}
-
-#column-2 {
-    position: fixed;
-    width: 700px;
-    height: 300px;
-    left: 380px;
-    top: 500px;
-}
-
-#column-3 {
-    position: fixed;
-    width: 576px;
-    height: 300px;
-    left: 1200px;
-    top: 500px;
-}
-
-.col-1 .col-col3 {
-    position: absolute;
-    border: 1px solid #00FF5F;
-    box-sizing: border-box;
-    border-radius: 20px;
-    width: 199px;
-    height: 59px;
-    left: 50px;
-    top: 60px;
-}
-
-.col-1 .col-col3 h2 {
-    margin: 0;
-    position: absolute;
-    color: #868686;
-    font-weight: 400;
-    top: 50%;
-    left: 10%;
-    transform: translate(0, -50%);
-}
-
-.col-1 .col-col3 .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    transform: translate(80%, 0%);
-    line-height: 70px;
-}
-
-#transfer {
-    left: 5%;
-    border: none;
-    top: 1%;
-}
-
-#transfer h2 {
-    font-weight: 600;
-}
-
-#col-col3-2 {
-    top: 45%;
-}
-
-#col-col3-3 {
-    border: none;
-    top: 20%;
-    left: 65%;
-}
-
-#col-col3-3 .image {
-    width: 150px;
-    height: 150px;
-}
-
-#col-col3-4 {
-    width: 500px;
-    height: 80px;
-    top: 70%;
-    border: none;
-}
-
-#col-col3-4 h6 {
-    margin: 0;
-    position: absolute;
-    color: #868686;
-    font-weight: 400;
-    top: 20%;
-    left: 5%;
-    transform: translate(0, -50%);
-}
-
-#col-col3-4 h2 {
-    top: 55%;
-    left: 5%;
-    border-bottom: 1px solid #00ff5f;
-    width: 350px;
-}
-
-#col-col3-4 .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    transform: translate(90%, 0%);
-    line-height: 120px;
-}
-
 .left .logo {
     height: 40px;
 }
@@ -223,25 +53,165 @@ header {
     height: 50px;
 }
 
-.navigation {
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    left: 0px;
-    margin-top: 120px;
-    background: #000000;
-    border-radius: 0px 30px;
-    border-left: 10px solid #000000;
-    overflow-x: hidden;
+.principal {
+    margin-top: 20px;
+}
+
+.conteudo {
+    width: 85%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.col-1 {
+    position: relative;
+    border: 1px solid #00FF5F;
+    border-radius: 30px;
+    float: left;
+    width: 45%;
+    height: 400px;
+    padding: 2%;
+    margin: 10px 2%;
+}
+
+#column-1 {}
+
+#column-2 {}
+
+#column-3 {}
+
+#column-4 {
+    border: none;
+}
+
+#column-1 h1 {
+    color: #868686;
+    font-weight: 400;
+}
+
+#column-1 .icon {
+    position: relative;
+    float: right;
+}
+
+#column-1 h4 {
+    position: relative;
+    color: #00ff5f;
+    font-weight: 100;
+    float: right;
+}
+
+#column-4 img {
+    float: right;
+    width: 240px;
+    margin-top: -20%;
+    transform: rotate(8deg);
     transition: 0.3s;
 }
 
-.navigation:hover {
-    width: 300px;
+#column-4 img:hover {
+    transform: scale(1.3) rotate(10deg);
+}
+
+#column-4 h1 {
+    color: #868686;
+    font-weight: 500;
+    margin-left: 3%;
+}
+
+#column-4 h4 {
+    color: #868686;
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+#column-4 .saldo {
+    color: #868686;
+    font-weight: 500;
+}
+
+.col-1 .col-col3 {
+    border: 1px solid #00FF5F;
+    border-radius: 20px;
+    width: 50%;
+    height: 70px;
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+
+.col-1 .col-col3 h2 {
+    color: #868686;
+    font-weight: 400;
+    margin-top: 3%;
+    text-align: start;
+    margin-left: 5%;
+}
+
+#transfer {
+    margin-bottom: 3%;
+    height: 50px;
+    border: none;
+}
+
+#transfer h2 {
+    font-weight: 700;
+    text-align: start;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+
+#col-col3-3 {
+    float: right;
+    height: auto;
+    width: 35%;
+    margin-top: -20%;
+    margin-bottom: 0;
+    border: none;
+}
+
+#col-col3-3 .image {
+    width: 100%;
+    float: right;
+}
+
+#col-col3-4 {
+    width: 100%;
+    border: none;
+}
+
+#col-col3-4 h6 {
+    color: #868686;
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+#col-col3-4 h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #00ff5f;
+}
+
+#col-col3-4 .icon {
+    margin-left: 60%;
+}
+
+.navigation {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    display: block;
+    float: left;
+    width: 15%;
+    height: 100%;
+    background: #000000;
+    border-radius: 0px 30px 0 0;
+    border-left: 10px solid #000000;
 }
 
 .navigation ul {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -327,3 +297,168 @@ header {
     left: 0;
     top: 25px;
 }
+
+
+/*EXTRATO*/
+
+#column-1-extrato {
+    position: fixed;
+    width: 1460px;
+    height: 600px;
+    left: 380px;
+    top: 100px;
+}
+
+#column-1-extrato table {
+    margin: 0;
+    position: absolute;
+    color: #898989;
+    text-align: center;
+    font-weight: 400;
+    width: 90%;
+    height: 70%;
+    top: 20%;
+    left: 0%;
+    margin-left: 30px;
+}
+
+#column-1-extrato table th,
+#column-2-extrato table th {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+#column-1-extrato table tr,
+#column-2-extrato table tr {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#column-1-extrato h1 {
+    margin: 0;
+    position: absolute;
+    color: #868686;
+    font-weight: 400;
+    top: 12%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+
+#column-1-extrato .icon {
+    position: relative;
+    display: block;
+    right: 60%;
+    transform: translate(80%, 0%);
+    line-height: 155px;
+}
+
+#column-2-extrato {
+    position: fixed;
+    width: 903px;
+    height: 187px;
+    left: 380px;
+    top: 730px;
+}
+
+#column-2-extrato h2 {
+    position: absolute;
+    color: #868686;
+    font-weight: 400;
+    top: 55%;
+    margin-top: 20px;
+    top: 12%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+
+#column-2-extrato table {
+    margin: 0;
+    position: absolute;
+    color: #898989;
+    text-align: center;
+    font-weight: 400;
+    width: 90%;
+    top: 45%;
+    left: 0%;
+    margin-left: 30px;
+}
+
+#column-3-extrato {
+    position: fixed;
+    width: 533px;
+    height: 187px;
+    left: 1308px;
+    top: 730px;
+}
+
+#container-1 {
+    width: 100%;
+    margin-top: 5px;
+    height: 85px;
+}
+
+#container-2 {
+    margin-top: 5px;
+    width: 100%;
+    height: 85px;
+}
+
+#container-1 .icon {
+    margin-left: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+#container-1 #duvida {
+    margin-right: 20px;
+    float: right;
+}
+
+
+/*
+@media screen and (max-width: 1720px) {
+    #column-1,
+    #column-2,
+    #column-3,
+    #column-4 {
+        font-size: 15px;
+        width: 35%;
+        height: 40%;
+        top: 12%;
+    }
+    #column-3,
+    #column-4 {
+        left: 60%;
+        margin-left: 2%;
+    }
+    #column-3,
+    #column-2 {
+        top: 55%;
+    }
+    #column-3 .col-col3 {
+        width: 200px;
+        height: 60px;
+    }
+    #column-3 .col-col3 .icon {
+        bottom: 15%;
+    }
+    #column-3 #transfer {
+        margin-top: 10px;
+    }
+    #column-3 #col-col3-2 {
+        top: 145px;
+    }
+    #column-3 #col-col3-4 {
+        top: 220px;
+    }
+    #column-3 #col-col3-4 .icon {
+        left: 80%;
+        top: -20px;
+    }
+    #column-4 img {
+        width: 200px;
+        height: 300px;
+    }
+}
+*/
