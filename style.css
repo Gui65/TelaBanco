@@ -17,6 +17,7 @@ body {
 header {
     position: fixed;
     top: 0;
+    left: 0;
     border-bottom: 3px solid #00ff5f;
     background-color: #ffff;
     padding: 8px 50px;
@@ -55,6 +56,7 @@ header {
 
 .principal {
     margin-top: 20px;
+    width: 100%;
 }
 
 .conteudo {
@@ -77,6 +79,25 @@ header {
 
 #column-1 {}
 
+#column-1 table {
+    margin: 0;
+    color: #898989;
+    text-align: center;
+    font-weight: 400;
+    width: 90%;
+    height: 70%;
+}
+
+#column-1 table th {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#column-1 table tr {
+    font-size: 25px;
+    font-weight: 500;
+}
+
 #column-2 {}
 
 #column-3 {}
@@ -90,15 +111,10 @@ header {
     font-weight: 400;
 }
 
-#column-1 .icon {
-    position: relative;
-    float: right;
-}
-
 #column-1 h4 {
-    position: relative;
     color: #00ff5f;
     font-weight: 100;
+    transform: translate(0, -100%);
     float: right;
 }
 
@@ -302,112 +318,108 @@ header {
 /*EXTRATO*/
 
 #column-1-extrato {
-    position: fixed;
-    width: 1460px;
-    height: 600px;
-    left: 380px;
-    top: 100px;
+    width: 95%;
+    height: 650px;
 }
 
 #column-1-extrato table {
-    margin: 0;
-    position: absolute;
+    margin-left: 3%;
     color: #898989;
-    text-align: center;
     font-weight: 400;
     width: 90%;
-    height: 70%;
-    top: 20%;
-    left: 0%;
-    margin-left: 30px;
+    border-spacing: 15px;
+    text-align: center;
 }
 
-#column-1-extrato table th,
-#column-2-extrato table th {
-    font-size: 12px;
+#column-1-extrato table th {
+    font-size: 15px;
     font-weight: bold;
     color: black;
 }
 
-#column-1-extrato table tr,
-#column-2-extrato table tr {
-    font-size: 20px;
+#column-1-extrato table tr {
+    font-size: 25px;
     font-weight: 300;
 }
 
 #column-1-extrato h1 {
-    margin: 0;
-    position: absolute;
+    margin-top: 1%;
+    margin-left: 3%;
     color: #868686;
     font-weight: 400;
-    top: 12%;
-    left: 5%;
     transform: translate(0, -50%);
 }
 
-#column-1-extrato .icon {
-    position: relative;
-    display: block;
-    right: 60%;
-    transform: translate(80%, 0%);
-    line-height: 155px;
-}
+#column-1-extrato .icon {}
 
 #column-2-extrato {
-    position: fixed;
-    width: 903px;
-    height: 187px;
-    left: 380px;
-    top: 730px;
+    padding: 1%;
+    width: 57%;
+    height: 150px;
 }
 
-#column-2-extrato h2 {
-    position: absolute;
+#column-2-extrato h1 {
     color: #868686;
-    font-weight: 400;
-    top: 55%;
-    margin-top: 20px;
-    top: 12%;
-    left: 5%;
-    transform: translate(0, -50%);
+    font-weight: 500;
+    margin-bottom: 1%;
 }
 
 #column-2-extrato table {
     margin: 0;
-    position: absolute;
     color: #898989;
     text-align: center;
     font-weight: 400;
     width: 90%;
-    top: 45%;
-    left: 0%;
-    margin-left: 30px;
+}
+
+#column-2-extrato table th {
+    font-size: 10px;
+    font-weight: 200;
+}
+
+#column-2-extrato table tr {
+    font-size: 20px;
+    font-weight: 400;
 }
 
 #column-3-extrato {
-    position: fixed;
-    width: 533px;
-    height: 187px;
-    left: 1308px;
-    top: 730px;
+    width: 35%;
+    height: 150px;
+    padding: 1%;
+    margin-left: 1%;
 }
 
 #container-1 {
     width: 100%;
-    margin-top: 5px;
-    height: 85px;
+    height: 60px;
+    margin-top: 0;
+    margin-left: 0;
+    border: none;
 }
 
 #container-2 {
-    margin-top: 5px;
     width: 100%;
-    height: 85px;
+    height: 60px;
+    margin-top: 0;
+    margin-left: 0;
+    border: none;
+}
+
+#container-2 h3 {
+    margin-top: 0;
+    color: #868686;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid #00ff5f;
+}
+
+#container-2 .icon {
+    float: right;
 }
 
 #container-1 .icon {
-    margin-left: 20px;
     float: left;
-    margin-top: 10px;
+    margin-left: 1%;
 }
 
 #container-1 #duvida {
@@ -415,50 +427,11 @@ header {
     float: right;
 }
 
-
-/*
 @media screen and (max-width: 1720px) {
-    #column-1,
-    #column-2,
-    #column-3,
-    #column-4 {
-        font-size: 15px;
-        width: 35%;
-        height: 40%;
-        top: 12%;
+    .col-1 {
+        margin-top: 2%;
     }
-    #column-3,
-    #column-4 {
-        left: 60%;
-        margin-left: 2%;
-    }
-    #column-3,
-    #column-2 {
-        top: 55%;
-    }
-    #column-3 .col-col3 {
-        width: 200px;
-        height: 60px;
-    }
-    #column-3 .col-col3 .icon {
-        bottom: 15%;
-    }
-    #column-3 #transfer {
-        margin-top: 10px;
-    }
-    #column-3 #col-col3-2 {
-        top: 145px;
-    }
-    #column-3 #col-col3-4 {
-        top: 220px;
-    }
-    #column-3 #col-col3-4 .icon {
-        left: 80%;
-        top: -20px;
-    }
-    #column-4 img {
-        width: 200px;
-        height: 300px;
+    .navigation li h2 {
+        font-size: 20px;
     }
 }
-*/
