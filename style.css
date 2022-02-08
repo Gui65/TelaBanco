@@ -148,6 +148,14 @@ header {
     font-weight: 500;
 }
 
+#grafico {
+    margin: 0;
+    padding: 3%;
+    width: 40%;
+    height: 250px;
+    border: none;
+}
+
 .col-1 .col-col3 {
     border: 1px solid #00FF5F;
     border-radius: 20px;
@@ -197,21 +205,29 @@ header {
 #col-col3-4 {
     width: 100%;
     border: none;
+    display: inline-block;
 }
 
 #col-col3-4 h6 {
     color: #868686;
     font-weight: 400;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
-#col-col3-4 h2 {
+#col-col3-4 input {
     margin-top: 0;
+    width: 70%;
+    margin-left: 2%;
+    border: none;
     border-bottom: 1px solid #00ff5f;
+    font-size: 30px;
+    font-weight: 300;
+    color: #868686;
+    outline: 0;
 }
 
 #col-col3-4 .icon {
-    margin-left: 60%;
+    margin-left: 10%;
 }
 
 .navigation {
@@ -225,6 +241,7 @@ header {
     background: #000000;
     border-radius: 0px 30px 0 0;
     border-left: 10px solid #000000;
+    overflow: hidden;
 }
 
 .navigation ul {
@@ -275,11 +292,8 @@ header {
 
 .navigation ul li.active {
     border-left: 4px solid #00ff5f;
+    background: #242424;
     align-items: center;
-}
-
-.navigation ul .login {
-    justify-content: center;
 }
 
 .navigation ul li a .foto {
@@ -314,6 +328,13 @@ header {
     top: 25px;
 }
 
+#power-off {
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
 
 /*EXTRATO*/
 
@@ -322,12 +343,30 @@ header {
     height: 650px;
 }
 
+#tabela {
+    margin-top: 0;
+    width: 95%;
+    height: 530px;
+    border: none;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ff5f;
+    border-radius: 5px;
+}
+
 #column-1-extrato table {
     margin-left: 3%;
     color: #898989;
     font-weight: 400;
     width: 90%;
-    border-spacing: 15px;
+    border-spacing: 25px;
     text-align: center;
 }
 
@@ -403,18 +442,24 @@ header {
     margin-top: 0;
     margin-left: 0;
     border: none;
+    display: inline-block;
 }
 
-#container-2 h3 {
+#container-2 input {
     margin-top: 0;
-    color: #868686;
-    font-size: 15px;
-    font-weight: 400;
+    width: 80%;
+    margin-left: 2%;
+    border: none;
     border-bottom: 1px solid #00ff5f;
+    font-size: 20px;
+    font-weight: 300;
+    color: #868686;
+    outline: 0;
 }
 
 #container-2 .icon {
     float: right;
+    margin-right: 10%;
 }
 
 #container-1 .icon {

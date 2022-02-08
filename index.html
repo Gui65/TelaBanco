@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco Next</title>
 </head>
@@ -104,6 +104,7 @@
                 </a>
             </li>
         </ul>
+        <i class="icon" id="power-off"><box-icon name='power-off' color='#00ff5f' size='md'></box-icon></i>
     </div>
     <div class="principal">
         <div class="conteudo">
@@ -147,6 +148,9 @@
                 <h4>Fatura Atual</h4>
                 <h1 class="saldo">R$ 1.034,00</h1>
                 <img src="img/cartaoNext.png" alt="" class="cartao">
+                <div id="grafico" class="col-1">
+                    <canvas id="pizza" width="542" height="542"></canvas>
+                </div>
             </div>
 
 
@@ -171,7 +175,10 @@
                 </div>
                 <div id="col-col3-4" class="col-col3">
                     <h6>Valor da tranferência</h6>
-                    <h2>R$0,00 <span class="icon"><box-icon type='solid' name='right-arrow-square' color='#00ff5f'></box-icon></span></h2>
+                    <input type="text" placeholder="R$0,00">
+                    <a href="#" class="icon">
+                        <box-icon type='solid' name='right-arrow-square' color='#00ff5f' size='md'></box-icon>
+                    </a>
 
                 </div>
 
@@ -216,7 +223,7 @@
         const data = {
             labels: labels,
             datasets: [{
-                label: 'Gastos',
+                label: 'Entradas',
                 backgroundColor: ['#FD6699'],
                 borderColor: 'transparent',
                 borderWidth: 1,
@@ -225,8 +232,18 @@
                 maxBarThickness: 8,
                 minBarLength: 20,
                 data: [0, 2000, 4000, 6000, 1300, 4300, 5400],
-
+            }, {
+                label: 'Saídas',
+                backgroundColor: ['#00ff5f'],
+                borderColor: 'transparent',
+                borderWidth: 1,
+                barPercentage: 0.5,
+                barThickness: 6,
+                maxBarThickness: 8,
+                minBarLength: 20,
+                data: [0, 588, 4180, 7500, 1800, 3300, 6200],
             }]
+
 
         };
 
@@ -237,12 +254,45 @@
         };
     </script>
     <script>
+        const dataum = {
+
+            labels: [
+                'Gasto',
+                'Disponível'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [2300, 3400],
+                backgroundColor: [
+                    '#FD6699',
+                    '#00ff5f',
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        const myConfig = {
+            type: 'doughnut',
+            data: dataum,
+            options: {
+
+            }
+        };
+    </script>
+    <script>
         const myChart = new Chart(
             document.getElementById('myChart'),
             config
 
         );
+        const myChart2 = new Chart(
+            document.getElementById('pizza'),
+            myConfig
+
+
+        );
     </script>
+
 
 </body>
 
