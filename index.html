@@ -80,7 +80,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="pix.html">
                     <span class="icon"><box-icon name='pinterest-alt' type='logo' color='#00ff5f'></box-icon></span>
                     <span class="titulo">Pix</span>
                 </a>
@@ -157,32 +157,32 @@
             <div id="column-2" class="col-1">
                 <canvas id="myChart" width="80px" height="40px"></canvas>
             </div>
-            <div id="column-3" class="col-1">
-                <div id="transfer" class="col-col3">
-                    <h2>Transferências</h2>
-                    <h6></h6>
-                </div>
-                <div class="col-col3">
-                    <h2>PIX <span class="icon"><box-icon name='chevron-down' color='#00ff5f'></box-icon></span></h2>
+            <form th:action="@{/}" method="post" th:object="${}">
+                <div id="column-3" class="col-1">
+                    <div id="transfer" class="col-col3">
+                        <h2>Transferir por PIX </h2>
+                        <h6></h6>
+                    </div>
+
+                    <div class="col-col3">
+                        <h6>Chave pix</h6>
+                        <input type="text" name="pix" id="pix" placeholder="Digite a chave pix">
+
+                    </div>
+                    <div id="col-col3-3" class="col-col3">
+                        <img src="img/png-transparent-qr-code-barcode-scanners-data-matrix-others-text-rectangle-monochrome-removebg-preview.png" alt="" class="image">
+                    </div>
+                    <div id="col-col3-4" class="col-col3">
+                        <h6>Valor da tranferência</h6>
+                        <input type="text" name="valor" id="valor" placeholder="R$0,00">
+                        <button id="button-enviar" type="submit">
+                            Enviar
+                        </button>
+
+                    </div>
 
                 </div>
-                <div id="col-col3-2" class="col-col3">
-                    <h2>ENVIAR <span class="icon"><box-icon name='chevron-down' color='#00ff5f'></box-icon></span></h2>
-
-                </div>
-                <div id="col-col3-3" class="col-col3">
-                    <img src="img/png-transparent-qr-code-barcode-scanners-data-matrix-others-text-rectangle-monochrome-removebg-preview.png" alt="" class="image">
-                </div>
-                <div id="col-col3-4" class="col-col3">
-                    <h6>Valor da tranferência</h6>
-                    <input type="text" placeholder="R$0,00">
-                    <a href="#" class="icon">
-                        <box-icon type='solid' name='right-arrow-square' color='#00ff5f' size='md'></box-icon>
-                    </a>
-
-                </div>
-
-            </div>
+            </form>
         </div>
     </div>
 
